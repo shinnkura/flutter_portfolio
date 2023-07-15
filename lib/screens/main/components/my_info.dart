@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/constants.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({
@@ -10,25 +11,27 @@ class MyInfo extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 1.23,
       child: Container(
-        color: Color(0xFF242430),
+        // color: Color.fromARGB(255, 252, 252, 252),
+        color: bgColor,
         child: Column(
           children: [
             Spacer(flex: 2),
             CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage("assets/images/IMG_7344.jpg"),
+              radius: 90,
+              backgroundImage: AssetImage("assets/images/icon.jpg"),
             ),
             Spacer(),
             Text(
-              "Abu Anwar",
+              "中岡 新蔵",
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Flutter Developer & Founder of \n The Flutter Way",
+              "FlutterとCoffeeを愛する\nエンジニア",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,
                 height: 1.5,
+                color: Colors.white.withOpacity(0.64),
               ),
             ),
             Spacer(flex: 2),

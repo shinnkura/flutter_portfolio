@@ -17,7 +17,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/bg.jpeg",
+            "assets/images/back.jpg",
             fit: BoxFit.cover,
           ),
           Container(color: darkColor.withOpacity(0.66)),
@@ -28,7 +28,7 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Discover my Amazing \nArt Space!",
+                  "ポートフォリオへ \nようこそ!",
                   style: Responsive.isDesktop(context)
                       ? Theme.of(context).textTheme.headline3!.copyWith(
                             fontWeight: FontWeight.bold,
