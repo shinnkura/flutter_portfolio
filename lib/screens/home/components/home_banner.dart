@@ -82,7 +82,10 @@ class MyBuildAnimatedText extends StatelessWidget {
           if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
-          Text("I build "),
+          // Text(
+          //   "",
+          //   style: TextStyle(color: Colors.white),
+          // ),
           Responsive.isMobile(context)
               ? Expanded(child: AnimatedText())
               : AnimatedText(),
@@ -105,15 +108,15 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "responsive web and mobile app.",
+          "ご覧い頂きありがとうございます！",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "complete e-Commerce app UI.",
+          "こちらのサイトは、私のポートフォリオです。",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "Chat app with dark and light theme.",
+          "どうぞ、ごゆっくりご覧ください！",
           speed: Duration(milliseconds: 60),
         ),
       ],
