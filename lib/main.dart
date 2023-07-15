@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light().copyWith(
         // Add this block for light theme
         primaryColor: primaryColor,
-        scaffoldBackgroundColor: Color.fromARGB(255, 125, 125, 125),
-        canvasColor: Color.fromARGB(255, 136, 135, 135),
+        scaffoldBackgroundColor: Color.fromARGB(255, 220, 219, 219),
+        canvasColor: Color.fromARGB(255, 172, 171, 171),
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.black)
             .copyWith(

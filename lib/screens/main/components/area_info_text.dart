@@ -22,7 +22,10 @@ class AreaInfoText extends StatelessWidget {
             title!,
             style: TextStyle(color: Colors.white),
           ),
-          Text(text!),
+          Text(
+            text!,
+            style: TextStyle(color: Colors.white60),
+          ),
         ],
       ),
     );

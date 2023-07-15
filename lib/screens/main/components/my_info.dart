@@ -23,7 +23,7 @@ class MyInfo extends StatelessWidget {
             Spacer(),
             Text(
               "中岡 新蔵",
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             Text(
               "FlutterとCoffeeを愛する\nエンジニア",
