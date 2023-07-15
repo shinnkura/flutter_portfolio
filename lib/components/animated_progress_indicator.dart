@@ -63,6 +63,8 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Color textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
+
     return Padding(
       padding: const EdgeInsets.only(bottom: defaultPadding),
       child: TweenAnimationBuilder(
@@ -75,9 +77,10 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
               children: [
                 Text(
                   label,
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: textColor),
                 ),
-                Text((value * 100).toInt().toString() + "%"),
+                Text((value * 100).toInt().toString() + "%",
+                    style: TextStyle(color: textColor)),
               ],
             ),
             SizedBox(height: defaultPadding / 2),

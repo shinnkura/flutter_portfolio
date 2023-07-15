@@ -14,12 +14,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark().copyWith(
+      themeMode: ThemeMode.system,
+      darkTheme: ThemeData.dark().copyWith(
         primaryColor: primaryColor,
         scaffoldBackgroundColor: bgColor,
         canvasColor: bgColor,
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white)
+            .copyWith(
+              bodyLarge: TextStyle(color: bodyTextColor),
+              bodyMedium: TextStyle(color: bodyTextColor),
+            ),
+      ),
+      theme: ThemeData.light().copyWith(
+        // Add this block for light theme
+        primaryColor: primaryColor,
+        scaffoldBackgroundColor: Color.fromARGB(255, 125, 125, 125),
+        canvasColor: Color.fromARGB(255, 136, 135, 135),
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+            .apply(bodyColor: Colors.black)
             .copyWith(
               bodyLarge: TextStyle(color: bodyTextColor),
               bodyMedium: TextStyle(color: bodyTextColor),
